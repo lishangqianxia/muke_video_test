@@ -1,0 +1,15 @@
+asgiref==3.2.5
+bpmappers==1.0.1
+Django==3.0.4
+django-redis==4.11.0
+echarts==0.0.0
+jieba==0.42.1
+mysqlclient==1.4.6
+peppercorn==0.6
+Pillow==7.0.0
+PyMySQL==0.9.3
+pytz==2019.3
+redis==3.4.1
+six==1.14.0
+sqlparse==0.3.1
+xlwt==1.3.0
