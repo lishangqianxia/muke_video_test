@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="10日重新更新">
+    <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/dashboard/views/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/views/ceshi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ceshi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/views/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/base_render.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/base_render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/index.html" afterDir="false" />
     </list>
     <list id="68221783-8d58-43a3-9801-e05a72252544" name="Revert &quot;增加到管理员页面&quot;" comment="Revert &quot;增加到管理员页面&quot;&#10;&#10;This reverts commit 78fb3d9c" />
     <list id="06eddb31-029e-48f5-a172-68b78d310695" name="增加到管理员页面" comment="增加到管理员页面" />
@@ -31,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -66,7 +75,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/!action.NewScratchFile.text.with.new!" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,7 +83,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RunManager" selected="Django server.video">
     <configuration name="Test: " type="DjangoTestsConfigurationType" temporary="true">
@@ -158,7 +168,7 @@
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:8000/dashboard" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/dashboard/login" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -206,7 +216,8 @@
       <workItem from="1586324714349" duration="727000" />
       <workItem from="1586352863492" duration="537000" />
       <workItem from="1586353412199" duration="10825000" />
-      <workItem from="1586485441662" duration="1268000" />
+      <workItem from="1586485441662" duration="17148000" />
+      <workItem from="1586509281178" duration="5024000" />
     </task>
     <task id="LOCAL-00001" summary="增加到管理员页面">
       <created>1586482102627</created>
@@ -236,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586486471536</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="10日重新更新">
+      <created>1586486733963</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586486733963</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,20 +330,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="10日重新更新" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="264" y="143" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586485562262">
+    <state x="264" y="143" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586518198475">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="206" y="135" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1586353330346" />
-    <state x="264" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586485562262" />
+    <state x="264" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586518198475" />
     <state x="663" y="114" key="#video" timestamp="1586485510630">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="663" y="114" key="#video/0.0.1920.1018@0.0.1920.1018" timestamp="1586485510630" />
-    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586486574506">
+    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586486732463">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586485428015" />
-    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586486574506" />
+    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586486732463" />
     <state x="99" y="109" width="1313" height="773" key="DiffContextDialog" timestamp="1586353018387">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -334,10 +352,11 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="486" y="237" key="EnvironmentVariablesDialog/0.0.1500.960@0.0.1500.960" timestamp="1586353237557" />
-    <state x="532" y="246" key="FileChooserDialogImpl" timestamp="1586447025089">
-      <screen x="0" y="0" width="1500" height="960" />
+    <state x="681" y="261" key="FileChooserDialogImpl" timestamp="1586500672718">
+      <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="532" y="246" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1586447025089" />
+    <state x="681" y="261" key="FileChooserDialogImpl/0.0.1920.1018@0.0.1920.1018" timestamp="1586500672718" />
     <state x="763" y="398" key="Github.CreateGistDialog" timestamp="1586485683196">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -346,52 +365,54 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="618" y="371" width="272" height="280" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1586482473074" />
-    <state width="1876" height="246" key="GridCell.Tab.0.bottom" timestamp="1586486366064">
+    <state width="1876" height="246" key="GridCell.Tab.0.bottom" timestamp="1586518530958">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="1876" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586486366064" />
-    <state width="1876" height="246" key="GridCell.Tab.0.center" timestamp="1586486366064">
+    <state width="1876" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586518530958" />
+    <state width="1876" height="246" key="GridCell.Tab.0.center" timestamp="1586518530958">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="1876" height="246" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586486366064" />
-    <state width="1876" height="246" key="GridCell.Tab.0.left" timestamp="1586486366064">
+    <state width="1876" height="246" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586518530958" />
+    <state width="1876" height="246" key="GridCell.Tab.0.left" timestamp="1586518530957">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="1876" height="246" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586486366064" />
-    <state width="1876" height="246" key="GridCell.Tab.0.right" timestamp="1586486366064">
+    <state width="1876" height="246" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586518530957" />
+    <state width="1876" height="246" key="GridCell.Tab.0.right" timestamp="1586518530958">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="1876" height="246" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586486366064" />
+    <state width="1876" height="246" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586518530958" />
     <state x="709" y="145" key="RollbackChangesDialog" timestamp="1586486533802">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="709" y="145" key="RollbackChangesDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586486533802" />
-    <state x="252" y="122" key="SettingsEditor" timestamp="1586482776571">
-      <screen x="0" y="0" width="1500" height="960" />
+    <state x="323" y="129" key="SettingsEditor" timestamp="1586489724178">
+      <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="252" y="122" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1586482776571" />
+    <state x="323" y="129" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1586489724178" />
     <state x="606" y="387" key="VCS.ChangelistChooser" timestamp="1586483153975">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="606" y="387" key="VCS.ChangelistChooser/0.0.1500.960@0.0.1500.960" timestamp="1586483153975" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586486678880">
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586486846948">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="343" y="209" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1586484628048" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586486678880" />
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586486846948" />
     <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586486525208">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="93" y="93" width="1313" height="773" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1500.960@0.0.1500.960" timestamp="1586483753905" />
     <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586486525208" />
-    <state x="93" y="93" width="1313" height="773" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586324370541">
-      <screen x="0" y="0" width="1500" height="960" />
+    <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586488640380">
+      <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="93" y="93" width="1313" height="773" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1500.960@0.0.1500.960" timestamp="1586324370541" />
+    <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586488640380" />
     <state x="751" y="419" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586486394741">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
