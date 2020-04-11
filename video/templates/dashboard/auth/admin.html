@@ -1,0 +1,31 @@
+<%inherit file="../base.html" />
+<%! from django.shortcuts import reverse %>
+<%def name="content()">\
+<h1>管理员模块</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>用户名</th>
+        <th>状态</th>
+        <th>创建时间</th>
+        <th>编辑</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        % for user in users:
+        <tr>
+            <td>${user.username}</td>
+            <td>${user.is_superuser}</td>
+            <td>${user.date_joined}</td>
+            % if user.is_superuser:
+                <td><a href="${reverse('admin_update_status')}?status='off'">取消管理员</a></td>
+            % else:
+                <td><a href="${reverse('admin_update_status')}?status=on">成为管理员</a></td>
+            % endif
+        </tr>
+        % endfor
+
+    </tbody>
+</table>
+</%def>

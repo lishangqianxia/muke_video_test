@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/dashboard/css/admin_manger.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/auth/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/views/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dashboard/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/nav.html" afterDir="false" />
     </list>
     <list id="68221783-8d58-43a3-9801-e05a72252544" name="Revert &quot;增加到管理员页面&quot;" comment="Revert &quot;增加到管理员页面&quot;&#10;&#10;This reverts commit 78fb3d9c" />
     <list id="06eddb31-029e-48f5-a172-68b78d310695" name="增加到管理员页面" comment="增加到管理员页面" />
@@ -34,9 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -211,7 +217,8 @@
       <workItem from="1586352863492" duration="537000" />
       <workItem from="1586353412199" duration="10825000" />
       <workItem from="1586485441662" duration="17148000" />
-      <workItem from="1586509281178" duration="7139000" />
+      <workItem from="1586509281178" duration="7417000" />
+      <workItem from="1586570778068" duration="6158000" />
     </task>
     <task id="LOCAL-00001" summary="增加到管理员页面">
       <created>1586482102627</created>
@@ -255,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586518724424</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="增加登录验证">
+      <created>1586521664823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586521664823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +343,8 @@
     <MESSAGE value="增加到管理员页面-2" />
     <MESSAGE value="10日重新更新" />
     <MESSAGE value="已修复CSRF_TOKEN错误,但还CSRF_COOKIE错误还在,需要先打开ceshi页面后,再进入Login页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="已修复CSRF_TOKEN错误,但还CSRF_COOKIE错误还在,需要先打开ceshi页面后,再进入Login页面" />
+    <MESSAGE value="增加登录验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加登录验证" />
   </component>
   <component name="WindowStateProjectService">
     <state x="264" y="143" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586518198475">
@@ -341,11 +356,11 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="663" y="114" key="#video/0.0.1920.1018@0.0.1920.1018" timestamp="1586485510630" />
-    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586521662665">
+    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586599309874">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586485428015" />
-    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586521662665" />
+    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586599309874" />
     <state x="99" y="109" width="1313" height="773" key="DiffContextDialog" timestamp="1586353018387">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -367,44 +382,44 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="618" y="371" width="272" height="280" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1586482473074" />
-    <state width="938" height="246" key="GridCell.Tab.0.bottom" timestamp="1586521530826">
+    <state width="1876" height="246" key="GridCell.Tab.0.bottom" timestamp="1586577192623">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="938" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586521530826" />
-    <state width="938" height="246" key="GridCell.Tab.0.center" timestamp="1586521530826">
+    <state width="1876" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
+    <state width="1876" height="246" key="GridCell.Tab.0.center" timestamp="1586577192623">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="938" height="246" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586521530826" />
-    <state width="938" height="246" key="GridCell.Tab.0.left" timestamp="1586521530825">
+    <state width="1876" height="246" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
+    <state width="1876" height="246" key="GridCell.Tab.0.left" timestamp="1586577192623">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="938" height="246" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586521530825" />
-    <state width="938" height="246" key="GridCell.Tab.0.right" timestamp="1586521530826">
+    <state width="1876" height="246" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
+    <state width="1876" height="246" key="GridCell.Tab.0.right" timestamp="1586577192623">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
-    <state width="938" height="246" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586521530826" />
+    <state width="1876" height="246" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
     <state x="709" y="145" key="RollbackChangesDialog" timestamp="1586486533802">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="709" y="145" key="RollbackChangesDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586486533802" />
-    <state x="323" y="129" key="SettingsEditor" timestamp="1586489724178">
+    <state x="323" y="129" key="SettingsEditor" timestamp="1586571787568">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="252" y="122" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1586482776571" />
-    <state x="323" y="129" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1586489724178" />
+    <state x="323" y="129" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1586571787568" />
     <state x="606" y="387" key="VCS.ChangelistChooser" timestamp="1586483153975">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="606" y="387" key="VCS.ChangelistChooser/0.0.1500.960@0.0.1500.960" timestamp="1586483153975" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586518735039">
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586521723505">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="343" y="209" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1586484628048" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586518735039" />
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586521723505" />
     <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586486525208">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -428,6 +443,10 @@
     </state>
     <state x="432" y="253" key="git4idea.merge.GitPullDialog/0.0.1500.960@0.0.1500.960" timestamp="1586352888282" />
     <state x="553" y="268" key="git4idea.merge.GitPullDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586485494021" />
+    <state x="623" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1586571067722">
+      <screen x="0" y="0" width="1920" height="1018" />
+    </state>
+    <state x="623" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1018@0.0.1920.1018" timestamp="1586571067722" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/video$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1586324182974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
