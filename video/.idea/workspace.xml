@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/dashboard/css/admin_manger.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/auth/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/permission.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/views/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dashboard/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/auth/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/auth/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/nav.html" afterDir="false" />
     </list>
     <list id="68221783-8d58-43a3-9801-e05a72252544" name="Revert &quot;增加到管理员页面&quot;" comment="Revert &quot;增加到管理员页面&quot;&#10;&#10;This reverts commit 78fb3d9c" />
     <list id="06eddb31-029e-48f5-a172-68b78d310695" name="增加到管理员页面" comment="增加到管理员页面" />
@@ -40,16 +41,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="develop" />
+        <entry key="$PROJECT_DIR$/.." value="develop-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -68,6 +69,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -356,10 +358,10 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="663" y="114" key="#video/0.0.1920.1018@0.0.1920.1018" timestamp="1586485510630" />
-    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586599309874">
-      <screen x="0" y="0" width="1920" height="1018" />
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586708781036">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586485428015" />
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586708781036" />
     <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586599309874" />
     <state x="99" y="109" width="1313" height="773" key="DiffContextDialog" timestamp="1586353018387">
       <screen x="0" y="0" width="1500" height="960" />
@@ -382,25 +384,25 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="618" y="371" width="272" height="280" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1586482473074" />
-    <state width="1876" height="246" key="GridCell.Tab.0.bottom" timestamp="1586577192623">
-      <screen x="0" y="0" width="1920" height="1018" />
+    <state width="1458" height="235" key="GridCell.Tab.0.bottom" timestamp="1586704874701">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
+    <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
     <state width="1876" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
-    <state width="1876" height="246" key="GridCell.Tab.0.center" timestamp="1586577192623">
-      <screen x="0" y="0" width="1920" height="1018" />
+    <state width="1458" height="235" key="GridCell.Tab.0.center" timestamp="1586704874701">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
+    <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
     <state width="1876" height="246" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
-    <state width="1876" height="246" key="GridCell.Tab.0.left" timestamp="1586577192623">
-      <screen x="0" y="0" width="1920" height="1018" />
+    <state width="1458" height="235" key="GridCell.Tab.0.left" timestamp="1586704874701">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
+    <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
     <state width="1876" height="246" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
-    <state width="1876" height="246" key="GridCell.Tab.0.right" timestamp="1586577192623">
-      <screen x="0" y="0" width="1920" height="1018" />
+    <state width="1458" height="235" key="GridCell.Tab.0.right" timestamp="1586704874701">
+      <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586482475831" />
+    <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
     <state width="1876" height="246" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586577192623" />
     <state x="709" y="145" key="RollbackChangesDialog" timestamp="1586486533802">
       <screen x="0" y="0" width="1920" height="1018" />

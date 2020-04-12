@@ -1,7 +1,18 @@
 <%inherit file="../base.html" />
 <%! from django.shortcuts import reverse %>
 <%def name="content()">\
+<%
+    prev_page = '{}?page={}'.format(reverse('admin_manger'), page_num - 1)
+    next_page = '{}?page={}'.format(reverse('admin_manger'), page_num + 1)
+%>
 <h1>管理员模块</h1>
+% if page_num > 1:
+    <a href="${prev_page}">上一页</a>
+% endif
+% if page_num < total:
+    <a href="${next_page}">下一页</a>
+% endif
+
 <table class="table">
     <thead>
     <tr>
