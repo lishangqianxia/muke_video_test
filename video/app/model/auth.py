@@ -17,7 +17,7 @@ class ClientUser(models.Model):
     avatar = models.CharField(max_length=500, default='')
     gender = models.CharField(max_length=10, default='')
     birthday = models.DateTimeField(null=True, blank=True, default=None)
-    status = models.BooleanField(default=True, db_column=True)
+    status = models.BooleanField(default=True, db_index=True)
     created_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -25,12 +25,12 @@ class ClientUser(models.Model):
 
 
     @classmethod
-    def add(cls, username, password, avatar='', genger='', birthday=None):
+    def add(cls, username, password, avatar='', gender='', birthday=None):
         return cls.objects.create(
             username=username,
             password=hash_password(password),
             avatar=avatar,
-            genger=genger,
+            gender=gender,
             birthday=birthday,
             status=True
         )
@@ -52,6 +52,11 @@ class ClientUser(models.Model):
 
         if hash_old_password != self.password:
             return False
+
+        hash_new_password = hash_password(new_password)
+        self.password = hash_new_password
+        self.save()
+        return True
 
     def update_status(self):
         self.status = not self.status
