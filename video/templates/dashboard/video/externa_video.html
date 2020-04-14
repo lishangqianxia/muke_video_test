@@ -84,7 +84,11 @@
             <td>${video.status}</td>
             <td>${video.created_time}</td>
             <td>${video.updated_time}</td>
-            <td><a href="">编辑</a>|<a href="${reverse('video_sub', kwargs={'video_id': video.id})}">附属信息</a> </td>
+            <td>
+                <a href="${reverse('video_update', kwargs={'video_id': video.id})}">编辑</a>
+                <a href="${reverse('video_sub', kwargs={'video_id': video.id})}">附属信息</a>
+                <a href="${reverse('video_update_static', kwargs={'video_id': video.id})}">修改状态</a>
+            </td>
         </tr>
         % endfor
 

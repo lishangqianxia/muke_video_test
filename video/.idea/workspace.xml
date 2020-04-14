@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/dashboard/js/video/video_sub.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/video/video_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/views/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views/video.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/dashboard/css/video_sub.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/css/video_sub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/video/externa_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/video/externa_video.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" afterDir="false" />
     </list>
     <list id="68221783-8d58-43a3-9801-e05a72252544" name="Revert &quot;增加到管理员页面&quot;" comment="Revert &quot;增加到管理员页面&quot;&#10;&#10;This reverts commit 78fb3d9c" />
@@ -40,9 +41,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -231,7 +232,7 @@
       <workItem from="1586848123186" duration="745000" />
       <workItem from="1586848883414" duration="1067000" />
       <workItem from="1586849970270" duration="170000" />
-      <workItem from="1586850159867" duration="8703000" />
+      <workItem from="1586850159867" duration="14452000" />
     </task>
     <task id="LOCAL-00001" summary="增加到管理员页面">
       <created>1586482102627</created>
@@ -289,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586781621313</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加完删除功能报错">
+      <created>1586859200232</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586859200232</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,10 +319,10 @@
                       </list>
                     </value>
                   </entry>
-                  <entry key="structure">
+                  <entry key="roots">
                     <value>
                       <list>
-                        <option value="dir:D:/编程/python项目/慕课/muke_video_test/video" />
+                        <option value="$PROJECT_DIR$/.." />
                       </list>
                     </value>
                   </entry>
@@ -357,6 +365,11 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加到管理员页面" />
@@ -365,7 +378,8 @@
     <MESSAGE value="已修复CSRF_TOKEN错误,但还CSRF_COOKIE错误还在,需要先打开ceshi页面后,再进入Login页面" />
     <MESSAGE value="增加登录验证" />
     <MESSAGE value="增加完演员" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加完演员" />
+    <MESSAGE value="添加完删除功能报错" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加完删除功能报错" />
   </component>
   <component name="WindowStateProjectService">
     <state x="264" y="143" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586518198475">
@@ -377,11 +391,11 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="663" y="114" key="#video/0.0.1920.1018@0.0.1920.1018" timestamp="1586485510630" />
-    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586781618611">
+    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586859194422">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586708781036" />
-    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586781618611" />
+    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586859194422" />
     <state x="127" y="116" width="1681" height="820" key="DiffContextDialog" timestamp="1586749994618">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -404,7 +418,7 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="618" y="371" width="272" height="280" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1586482473074" />
-    <state width="897" height="374" key="GridCell.Tab.0.bottom" timestamp="1586858837708">
+    <state width="900" height="584" key="GridCell.Tab.0.bottom" timestamp="1586865572237">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1586847962519">
@@ -412,8 +426,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="897" height="374" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586858837708" />
-    <state width="897" height="374" key="GridCell.Tab.0.center" timestamp="1586858837708">
+    <state width="900" height="584" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
+    <state width="900" height="584" key="GridCell.Tab.0.center" timestamp="1586865572237">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1586847962519">
@@ -421,8 +435,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="897" height="374" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586858837708" />
-    <state width="897" height="374" key="GridCell.Tab.0.left" timestamp="1586858837708">
+    <state width="900" height="584" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
+    <state width="900" height="584" key="GridCell.Tab.0.left" timestamp="1586865572237">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1586847962519">
@@ -430,8 +444,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="897" height="374" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586858837708" />
-    <state width="897" height="374" key="GridCell.Tab.0.right" timestamp="1586858837708">
+    <state width="900" height="584" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
+    <state width="900" height="584" key="GridCell.Tab.0.right" timestamp="1586865572237">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1586847962519">
@@ -439,7 +453,7 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="897" height="374" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586858837708" />
+    <state width="900" height="584" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
     <state x="540" y="242" key="IDE.errors.dialog" timestamp="1586746062272">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -466,11 +480,11 @@
     </state>
     <state x="343" y="209" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1586484628048" />
     <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586781625981" />
-    <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586486525208">
+    <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586859313096">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="93" y="93" width="1313" height="773" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1500.960@0.0.1500.960" timestamp="1586483753905" />
-    <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586486525208" />
+    <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586859313096" />
     <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586488640380">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -490,6 +504,10 @@
     </state>
     <state x="432" y="253" key="git4idea.merge.GitPullDialog/0.0.1500.960@0.0.1500.960" timestamp="1586352888282" />
     <state x="553" y="268" key="git4idea.merge.GitPullDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586485494021" />
+    <state x="743" y="393" key="git4idea.ui.GitResetDialog" timestamp="1586859246951">
+      <screen x="0" y="0" width="1920" height="1018" />
+    </state>
+    <state x="743" y="393" key="git4idea.ui.GitResetDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586859246951" />
     <state x="985" y="282" width="672" height="678" key="search.everywhere.popup" timestamp="1586855733112">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>

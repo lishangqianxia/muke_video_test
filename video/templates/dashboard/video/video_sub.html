@@ -6,6 +6,19 @@
 <%def name="content()">\
 <h1>${video.name}<span>${error}</span></h1>
 
+   <form class="form-horizontal edit-area add-video-area add-url" action="${reverse('video_star')}" method="POST">${csrf_token}
+        <p>演员与身份编辑区域</p>
+        <label>演员</label><input type="text" name="name" class="form-control"/><br />
+        <label>身份</label>
+        <select class="form-control" name="identity">
+            %for identity in IdentityType:
+            <option value="${identity.value}">${identity.label}</option>
+            %endfor
+        </select>
+        <input type="hidden" value="${video.id}" name="video_id">
+        <input type="submit" value="添加" class="btn btn-info" id="add-star-btn">
+    </form>
+
     <form class="form-horizontal edit-area add-video-area add-url" method="POST">${csrf_token}
         <p>地址与选集编辑区域</p>
         <label>添加地址</label><input id="url" type="text" name="url" class="form-control"/><br/>
@@ -32,42 +45,31 @@
             <td>
                 <a class="btn btn-default" href="${video_sub.url}">查看</a>
                 <button class="btn btn-default update-btn" data-id="${video_sub.id}" data-url="${video_sub.url}" data-number="${video_sub.number}">编辑</button>
-                <a class="btn btn-default" href="${reverse('sub_delete', kwargs={'videosub_id': video_sub_id, 'video_id': video.id})}">删除</a>
+                <a class="btn btn-default" href="${reverse('sub_delete', kwargs={'videosub_id': video_sub.id, 'video_id': video.id})}">删除</a>
             </td>
         </tr>
         % endfor
 
     </tbody>
 </table>
-<ul>
-    %for video_sub in video.video_sub.all():
-    <li><a href="${video_sub.url}">第${video_sub.number}集</a></li>
-    %endfor
-</ul>
-<h2>演员</h2>
+## <ul>
+##     %for video_sub in video.video_sub.all():
+##     <li><a href="${video_sub.url}">第${video_sub.number}集</a></li>
+##     %endfor
+## </ul>
+<h2>演员(点击可删除)</h2>
 <ul>
     %for video_star in video.video_star.all():
         <li><a href="${reverse('star_delete', kwargs={'star_id': video_star.id, 'video_id':video.id})}">${video_star.name}:${IdentityType(video_star.identity).label}</a></li>
     %endfor
 </ul>
-    <form class="form-horizontal edit-area add-video-area add-url" method="POST">${csrf_token}
-        <p>地址与选集编辑区域</p>
-        <label>添加地址</label><input type="text" name="url" class="form-control"/><br/>
-        <label>添加集数</label><input type="number" name="number" class="form-control"/><br/>
-        <input type="submit" value="添加" class="btn btn-info" id="add-url-btn">
-    </form>
-    <form class="form-horizontal edit-area add-video-area add-url" action="${reverse('video_star')}" method="POST">${csrf_token}
-        <p>演员与身份编辑区域</p>
-        <label>演员</label><input type="text" name="name" class="form-control"/><br />
-        <label>身份</label>
-        <select class="form-control" name="identity">
-            %for identity in IdentityType:
-            <option value="${identity.value}">${identity.label}</option>
-            %endfor
-        </select>
-        <input type="hidden" value="${video.id}" name="video_id">
-        <input type="submit" value="添加" class="btn btn-info" id="add-star-btn">
-    </form>
+##     <form class="form-horizontal edit-area add-video-area add-url" method="POST">${csrf_token}
+##         <p>地址与选集编辑区域</p>
+##         <label>添加地址</label><input type="text" name="url" class="form-control"/><br/>
+##         <label>添加集数</label><input type="number" name="number" class="form-control"/><br/>
+##         <input type="submit" value="添加" class="btn btn-info" id="add-url-btn">
+##     </form>
+
 </%def>
 <%def name="css()">\
     <link href="/static/dashboard/css/video_sub.css" rel="stylesheet" />
