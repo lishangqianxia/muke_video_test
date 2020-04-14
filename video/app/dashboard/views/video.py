@@ -4,7 +4,9 @@ from django.views.generic import View
 from django.shortcuts import redirect, reverse
 from app.libs.base_render import render_to_response
 from app.utils.permission import dashboard_auth
-from app.model.video import VideoType, FromType, NationalityType, Video, VideoSub
+from app.model.video import (
+    VideoType, FromType, NationalityType,
+    IdentityType, Video, VideoSub, VideoStar)
 from app.utils.common import check_and_get_video_type
 
 
@@ -68,17 +70,36 @@ class VideoSubView(View):
 
         data = {}
         video = Video.objects.get(pk=video_id)
+        error = request.GET.get('error', '')
 
         data['video'] = video
+        data['error'] = error
         return render_to_response(request, self.TEMPLATE, data=data)
 
     def post(self, request, video_id):
         url = request.POST.get('url')
+        number = request.POST.get('number')
+        videosub_id = request.POST.get('videosub_id')
+
+        url_format = reverse('video_sub', kwargs={'video_id': video_id})
+
+        if not all([url, number]):
+            return redirect('{}?error={}'.format(url_format, '缺少必要字段'))
+
         video = Video.objects.get(pk=video_id)
-
-        length = video.video_sub.count()
-        VideoSub.objects.create(video=video, url=url, number=length + 1)
-
+        if not videosub_id:
+            try:
+                VideoSub.ordering.creatr(video=video, url=url, number=number)
+            except:
+                return redirect('{}?error={}'.format(url_format, '创建失败'))
+        else:
+            video_sub = VideoSub.objects.get(pk=videosub_id)
+            try:
+                video_sub.url = url
+                video_sub.number = number
+                video_sub.save()
+            except:
+                return redirect('{}?error={}'.format(url_format, '修改失败'))
         return redirect(reverse('video_sub', kwargs={'video_id': video_id}))
 
 
@@ -89,5 +110,41 @@ class VideoStarView(View):
         identity = request.POST.get('identity')
         video_id = request.POST.get('video_id')
 
-        print(name, identity, video_id)
+        path_format = '{}'.format(reverse('video_sub', kwargs={'video_id': video_id}))
+
+        if not all([name, identity, video_id]):
+            return redirect('{}?error={}'.format(path_format, '缺少必要字段'))
+
+        result = check_and_get_video_type(
+            IdentityType, identity, '非法的身份'
+        )
+
+        if result.get('code') != 0:
+            return redirect('{}?error={}'.format(path_format, result['msg']))
+
+        video = Video.objects.get(pk=video_id)
+
+        try:
+            VideoStar.objects.create(
+                video=video,
+                name=name,
+                identity=identity
+            )
+        except:
+            return redirect('{}?error={}'.format(path_format, '创建失败'))
+
+        return redirect(reverse('video_sub', kwargs={'video_id': video_id}))
+
+
+class StarDelete(View):
+
+    def get(self, request, star_id, video_id):
+        VideoStar.objects.filter(id=star_id).delete()
+        return redirect(reverse('video_sub', kwargs={'video_id': video_id}))
+
+
+class SubDelete(View):
+
+    def get(self, request, videosub_id, video_id):
+        VideoSub.objects.filter(id=videosub_id).delete()
         return redirect(reverse('video_sub', kwargs={'video_id': video_id}))
