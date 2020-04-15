@@ -1,11 +1,10 @@
 <%inherit file="../base.html" />
 <%!
     from django.shortcuts import reverse
-    from app.model.video import IdentityType
+    from app.model.video import IdentityType, FromType
 %>
 <%def name="content()">\
 <h1>${video.name}<span>${error}</span></h1>
-
    <form class="form-horizontal edit-area add-video-area add-url" action="${reverse('video_star')}" method="POST">${csrf_token}
         <p>演员与身份编辑区域</p>
         <label>演员</label><input type="text" name="name" class="form-control"/><br />
@@ -19,9 +18,18 @@
         <input type="submit" value="添加" class="btn btn-info" id="add-star-btn">
     </form>
 
+    % if FromType(video.from_to) == FromType.custom:
+    <form enctype="multipart/form-data" class="form-horizontal edit-area add-video-area add-url" method="POST">${csrf_token}
+    % else:
     <form class="form-horizontal edit-area add-video-area add-url" method="POST">${csrf_token}
+    % endif
+
         <p>地址与选集编辑区域</p>
-        <label>添加地址</label><input id="url" type="text" name="url" class="form-control"/><br/>
+        % if FromType(video.from_to) != FromType.custom:
+            <label>添加地址</label><input id="url" type="text" name="url" class="form-control"/><br/>
+        % else:
+            <label>添加地址</label><input id="url" type="file" name="url" class="form-control"/><br/>
+        % endif
         <label>添加集数</label><input id="number" type="number" name="number" class="form-control"/><br/>
         <input type="hidden" value="" name="videosub_id" id="videosub-input-id">
         <input type="submit" value="添加" class="btn btn-info" id="add-url-btn">

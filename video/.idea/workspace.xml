@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/video/video_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/base_qiniu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/views/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/views/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views/video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dashboard/css/video_sub.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/css/video_sub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dashboard/css/externa_video.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/css/externa_video.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/video/externa_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/video/externa_video.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" afterDir="false" />
     </list>
@@ -40,10 +45,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -87,7 +92,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -232,7 +237,12 @@
       <workItem from="1586848123186" duration="745000" />
       <workItem from="1586848883414" duration="1067000" />
       <workItem from="1586849970270" duration="170000" />
-      <workItem from="1586850159867" duration="14452000" />
+      <workItem from="1586850159867" duration="14707000" />
+      <workItem from="1586914288102" duration="10863000" />
+      <workItem from="1586930940440" duration="1868000" />
+      <workItem from="1586932846291" duration="578000" />
+      <workItem from="1586933439640" duration="2644000" />
+      <workItem from="1586936134156" duration="8929000" />
     </task>
     <task id="LOCAL-00001" summary="增加到管理员页面">
       <created>1586482102627</created>
@@ -297,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586859200232</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完成视频状态修改">
+      <created>1586865753097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586865753097</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,32 +396,34 @@
     <MESSAGE value="增加登录验证" />
     <MESSAGE value="增加完演员" />
     <MESSAGE value="添加完删除功能报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加完删除功能报错" />
+    <MESSAGE value="完成视频状态修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成视频状态修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="264" y="143" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586518198475">
+    <state x="264" y="143" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586936548481">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="206" y="135" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1586353330346" />
-    <state x="264" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586518198475" />
+    <state x="264" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586936548481" />
     <state x="663" y="114" key="#video" timestamp="1586485510630">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="663" y="114" key="#video/0.0.1920.1018@0.0.1920.1018" timestamp="1586485510630" />
-    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586859194422">
+    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586865751031">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586708781036" />
-    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586859194422" />
+    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586865751031" />
     <state x="127" y="116" width="1681" height="820" key="DiffContextDialog" timestamp="1586749994618">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="99" y="109" width="1313" height="773" key="DiffContextDialog/0.0.1500.960@0.0.1500.960" timestamp="1586353018387" />
     <state x="127" y="116" width="1681" height="820" key="DiffContextDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586749994618" />
-    <state x="486" y="237" key="EnvironmentVariablesDialog" timestamp="1586353237557">
-      <screen x="0" y="0" width="1500" height="960" />
+    <state x="622" y="251" key="EnvironmentVariablesDialog" timestamp="1586936421546">
+      <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="486" y="237" key="EnvironmentVariablesDialog/0.0.1500.960@0.0.1500.960" timestamp="1586353237557" />
+    <state x="622" y="251" key="EnvironmentVariablesDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586936421546" />
     <state x="681" y="261" key="FileChooserDialogImpl" timestamp="1586500672718">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -418,7 +437,11 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="618" y="371" width="272" height="280" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1586482473074" />
-    <state width="900" height="584" key="GridCell.Tab.0.bottom" timestamp="1586865572237">
+    <state x="323" y="135" width="1326" height="686" key="GrepConsoleSettings" timestamp="1586933069106">
+      <screen x="0" y="0" width="1920" height="1018" />
+    </state>
+    <state x="323" y="135" width="1326" height="686" key="GrepConsoleSettings/0.0.1920.1018@0.0.1920.1018" timestamp="1586933069106" />
+    <state width="1876" height="332" key="GridCell.Tab.0.bottom" timestamp="1586949578554">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1586847962519">
@@ -426,8 +449,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="584" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
-    <state width="900" height="584" key="GridCell.Tab.0.center" timestamp="1586865572237">
+    <state width="1876" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1586949578554" />
+    <state width="1876" height="332" key="GridCell.Tab.0.center" timestamp="1586949578554">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1586847962519">
@@ -435,8 +458,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="584" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
-    <state width="900" height="584" key="GridCell.Tab.0.left" timestamp="1586865572237">
+    <state width="1876" height="332" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1586949578554" />
+    <state width="1876" height="332" key="GridCell.Tab.0.left" timestamp="1586949578554">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1586847962519">
@@ -444,8 +467,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="584" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
-    <state width="900" height="584" key="GridCell.Tab.0.right" timestamp="1586865572237">
+    <state width="1876" height="332" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1586949578554" />
+    <state width="1876" height="332" key="GridCell.Tab.0.right" timestamp="1586949578554">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1586847962519">
@@ -453,7 +476,7 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="584" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586865572237" />
+    <state width="1876" height="332" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1586949578554" />
     <state x="540" y="242" key="IDE.errors.dialog" timestamp="1586746062272">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -462,11 +485,11 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="709" y="145" key="RollbackChangesDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586486533802" />
-    <state x="276" y="201" key="SettingsEditor" timestamp="1586850171707">
+    <state x="578" y="153" key="SettingsEditor" timestamp="1586935063462">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="252" y="122" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1586482776571" />
-    <state x="276" y="201" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1586850171707" />
+    <state x="578" y="153" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1586935063462" />
     <state x="1178" y="238" width="540" height="540" key="StructurePopup" timestamp="1586849716999">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -475,11 +498,11 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="606" y="387" key="VCS.ChangelistChooser/0.0.1500.960@0.0.1500.960" timestamp="1586483153975" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586781625981">
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586865782954">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="343" y="209" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1586484628048" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586781625981" />
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586865782954" />
     <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586859313096">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
