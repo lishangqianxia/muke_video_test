@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import djcelery
+
+djcelery.setup_loader()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,7 +41,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'djcelery',
 ]
+
+BROKER_URL = 'redis://localhost:6379/2'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/3'
+CELERY_IMPORTS = ('app.tasks.task')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -84,6 +92,17 @@ DATABASES = {
     }
 }
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'CONNECTION_POOL_KWARGS': {'max_connections': 200}
+            # 'PASSWORD': 'XXX'
+        }
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -128,4 +147,4 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 QINIU_AK = 'r7iPKuapWo22YmPn5C9xLbJRkhGHhoJebJMZBy1q'
 QINIU_SK = 'qMJTqzsmFPst1fh4_aj6BSwIJO3BwyX5Dh27X7jr'
 QINIU_VIDEO = 'video-muke-lishangqianxia'
-QINIU_VIDEO_URL = 'http://q8tod5lu6.blt.clouddn.com'
+QINIU_VIDEO_URL = 'http://q8tod5lu6.bkt.clouddn.com'
