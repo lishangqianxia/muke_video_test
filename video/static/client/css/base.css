@@ -51,6 +51,11 @@ footer ul li {
     text-align: center;
 }
 
+footer ul li a {
+    color: green;
+    text-decoration: none;
+}
+
 .base-content {
     width: 100%;
     zoom: 1;

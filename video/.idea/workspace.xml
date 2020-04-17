@@ -2,32 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4318334-6b73-4dd4-ae5b-7ba010cdffd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/client/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/client/views/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/client/views/video.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tasks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tasks/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/client/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/client/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/client/video/video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/video.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/video.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/client/views/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/client/views/comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/consts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/client/css/auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/client/css/public_video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/client/css/video_sub.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/client/js/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/client/js/video_sub.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/client/auth/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/client/video/video_sub.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/client/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python_d.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw_d.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/client/views/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/views/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/client/views/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/views/video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/base_render.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/base_render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/permission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/client/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/client/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/client/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/client/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/client/video/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/client/video/video.html" afterDir="false" />
     </list>
     <list id="68221783-8d58-43a3-9801-e05a72252544" name="Revert &quot;增加到管理员页面&quot;" comment="Revert &quot;增加到管理员页面&quot;&#10;&#10;This reverts commit 78fb3d9c" />
     <list id="06eddb31-029e-48f5-a172-68b78d310695" name="增加到管理员页面" comment="增加到管理员页面" />
@@ -59,10 +55,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -106,10 +102,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\pythonftp\muke\lession8\muke_video_test\video\templates\client" />
       <recent name="E:\pythonftp\muke\lession8\muke_video_test\video\static\client\css" />
       <recent name="E:\pythonftp\慕课\lession8\muke_video_test\video\static\dashboard\js\video" />
       <recent name="E:\pythonftp\慕课\lession8\muke_video_test\video\static\dashboard\js" />
@@ -264,7 +261,8 @@
       <workItem from="1587022139207" duration="116000" />
       <workItem from="1587022275127" duration="1866000" />
       <workItem from="1587024744971" duration="2210000" />
-      <workItem from="1587027068932" duration="10845000" />
+      <workItem from="1587027068932" duration="11164000" />
+      <workItem from="1587103692648" duration="21009000" />
     </task>
     <task id="LOCAL-00001" summary="增加到管理员页面">
       <created>1586482102627</created>
@@ -343,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586949985305</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="开始制作前端页面">
+      <created>1587038318464</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587038318464</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +432,8 @@
     <MESSAGE value="添加完删除功能报错" />
     <MESSAGE value="完成视频状态修改" />
     <MESSAGE value="增加完成七牛上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加完成七牛上传" />
+    <MESSAGE value="开始制作前端页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始制作前端页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1032" y="166" key="#Notifications" timestamp="1587003829032">
@@ -439,6 +445,10 @@
     </state>
     <state x="206" y="135" width="1086" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1586353330346" />
     <state x="273" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1587036614746" />
+    <state x="1089" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587122578655">
+      <screen x="0" y="0" width="1920" height="1018" />
+    </state>
+    <state x="1089" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1587122578655" />
     <state x="585" y="338" key="#com.intellij.tools.ToolEditorDialog" timestamp="1587030793261">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -447,11 +457,11 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="663" y="114" key="#video/0.0.1920.1018@0.0.1920.1018" timestamp="1586485510630" />
-    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1586949981366">
+    <state x="467" y="0" key="CommitChangelistDialog2" timestamp="1587038309857">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="365" y="0" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1586708781036" />
-    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1586949981366" />
+    <state x="467" y="0" key="CommitChangelistDialog2/0.0.1920.1018@0.0.1920.1018" timestamp="1587038309857" />
     <state x="127" y="116" width="1681" height="820" key="DiffContextDialog" timestamp="1586749994618">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -479,7 +489,7 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="323" y="135" width="1326" height="686" key="GrepConsoleSettings/0.0.1920.1018@0.0.1920.1018" timestamp="1586933069106" />
-    <state width="900" height="281" key="GridCell.Tab.0.bottom" timestamp="1587037978308">
+    <state width="900" height="40" key="GridCell.Tab.0.bottom" timestamp="1587125125785">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1586847962519">
@@ -487,8 +497,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1587037978308" />
-    <state width="900" height="281" key="GridCell.Tab.0.center" timestamp="1587037978308">
+    <state width="900" height="40" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1587125125785" />
+    <state width="900" height="40" key="GridCell.Tab.0.center" timestamp="1587125125784">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1586847962519">
@@ -496,8 +506,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="281" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1587037978308" />
-    <state width="900" height="281" key="GridCell.Tab.0.left" timestamp="1587037978308">
+    <state width="900" height="40" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1587125125784" />
+    <state width="900" height="40" key="GridCell.Tab.0.left" timestamp="1587125125784">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1586847962519">
@@ -505,8 +515,8 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="281" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1587037978308" />
-    <state width="900" height="281" key="GridCell.Tab.0.right" timestamp="1587037978308">
+    <state width="900" height="40" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1587125125784" />
+    <state width="900" height="40" key="GridCell.Tab.0.right" timestamp="1587125125784">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1586847962519">
@@ -514,7 +524,7 @@
     </state>
     <state width="866" height="206" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1018@0.0.1920.1018" timestamp="1586847962519" />
     <state width="1458" height="235" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586704874701" />
-    <state width="900" height="281" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1587037978308" />
+    <state width="900" height="40" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1587125125784" />
     <state x="540" y="242" key="IDE.errors.dialog" timestamp="1586746062272">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -523,11 +533,11 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="709" y="145" key="RollbackChangesDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586486533802" />
-    <state x="271" y="123" key="SettingsEditor" timestamp="1587033507493">
+    <state x="271" y="123" key="SettingsEditor" timestamp="1587038363288">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="252" y="122" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1586482776571" />
-    <state x="271" y="123" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1587033507493" />
+    <state x="271" y="123" key="SettingsEditor/0.0.1920.1018@0.0.1920.1018" timestamp="1587038363288" />
     <state x="1178" y="238" width="540" height="540" key="StructurePopup" timestamp="1586849716999">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -536,11 +546,11 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="606" y="387" key="VCS.ChangelistChooser/0.0.1500.960@0.0.1500.960" timestamp="1586483153975" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1586949990702">
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2" timestamp="1587038377235">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="343" y="209" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1586484628048" />
-    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1586949990702" />
+    <state x="439" y="222" key="Vcs.Push.Dialog.v2/0.0.1920.1018@0.0.1920.1018" timestamp="1587038377235" />
     <state x="119" y="99" width="1681" height="820" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586859313096">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -573,10 +583,10 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="743" y="393" key="git4idea.ui.GitResetDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1586859246951" />
-    <state x="985" y="282" width="672" height="678" key="search.everywhere.popup" timestamp="1586855733112">
+    <state x="985" y="282" width="672" height="678" key="search.everywhere.popup" timestamp="1587122835901">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state x="985" y="282" width="672" height="678" key="search.everywhere.popup/0.0.1920.1018@0.0.1920.1018" timestamp="1586855733112" />
+    <state x="985" y="282" width="672" height="678" key="search.everywhere.popup/0.0.1920.1018@0.0.1920.1018" timestamp="1587122835901" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/video$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1586324182974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
