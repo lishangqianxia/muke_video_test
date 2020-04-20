@@ -85,9 +85,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'muke_video',
-        'USER': 'root',
-        'PASSWORD': 'sanse123',
-        'HOST': '47.94.170.163',
+        'USER': 'lishangqianxia',
+        'PASSWORD': 'LIshang1986',
+        'HOST': 'rm-2ze0892s109g19nh9go.mysql.rds.aliyuncs.com',
         'PORT': 3306,
     }
 }
